@@ -1,0 +1,118 @@
+div
+{
+cursor:url(smiley.gif),url(myBall.cur),auto;
+}
+.title{
+    text-align: center;
+    font-family: 'Song Myung', serif;
+    font-size: 40px;
+
+    }
+.content{
+    padding: 0 10%;
+    font-size: 20px;
+}
+img{
+    width: 50px;
+    position: relative;
+    grid-column: 1;
+    border-radius: 100%;
+    border: 2px; background-color: red;
+    z-index: 10;
+}
+.card{
+    position: relative;
+    display:grid;
+    grid-template-columns: 60px auto 30px; 
+    background-color: cadetblue;
+    width: 40%;
+    margin-bottom: 5%;
+    font-family: 'Song Myung', serif;
+    z-index: 5;
+    word-break: keep-all;
+
+}
+.date{
+    grid-column: 2;
+    position: relative;
+    font-size: 30px;
+}
+.what{
+    grid-column: 2;
+    position: relative;
+}
+.where{
+    grid-column: 2;
+    position: relative;
+}
+.text{
+    grid-column: 2;
+    position: relative;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: darkblue;
+    position: absolute;
+    right: -27.3%;
+    top: 40%;
+    border-radius: 100%;
+}
+.line{
+    position:absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -2.5px;
+    width: 5px;
+    height: 150%;
+    background-color: black;
+    
+}
+.card:nth-child(even){
+    margin-left: 60%;
+}
+.card:nth-child(even) .dot{
+    left: -27.3%;
+}
+
+#button__top {
+    text-align: center;
+    background-color: #ffe3ed;
+    box-shadow: 0px -2px 6px 2px #d3b5c0 inset;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    border-top-right-radius: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+.button__change__bg {
+    font-size: 20px;
+    border-radius: 10%;
+    background-color: #edf8f7;
+    padding: 5px;
+    transition: .4s;
+}
+
+.button__change__bg:hover {
+    background-color: var(--GREEN);
+    color: white;
+}
+
+.button__change__bg:active {
+    background-color: orange;
+    color: white;
+}
+
+@media(max-width:1000px){
+    .card{
+        width:80%;
+        margin-left: 10%;
+    }
+    .card:nth-child(even){
+        margin-left: 10%;
+    }
+    .dot, .line{
+        display: none;
+    }
